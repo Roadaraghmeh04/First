@@ -5,28 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#03A9F4"
+    android:background="#813C3C"
+    android:backgroundTint="#EF34E9"
+    android:backgroundTintMode="screen"
+    android:hapticFeedbackEnabled="false"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#E2D2D2"
         android:text=" Choose Books Catogory"
+        android:textColorHighlight="#673AB7"
+        android:textColorLink="#386F9E"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.107" />
 
     <Spinner
         android:id="@+id/spnBooks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#732439"
         android:entries="@array/books"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -35,8 +41,10 @@
         android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
+        android:background="#3BBCA8"
+        android:backgroundTintMode="screen"
         android:text="Search"
         app:layout_constraintEnd_toEndOf="@+id/spnBooks"
         app:layout_constraintTop_toBottomOf="@+id/spnBooks" />
@@ -45,8 +53,8 @@
         android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/btnSearch"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
